@@ -59,7 +59,7 @@ Recommendation: ${a.clinical_recommendation?.recommended_action}`
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "google/gemini-3-flash-preview",
+        model: "openai/gpt-5-nano",
         messages: [
           {
             role: "system",

@@ -167,7 +167,22 @@ export default function ResultCard({ result }: { result: DrugAssessmentResult })
             )}
           </div>
         ) : (
-          <p className="text-sm text-muted-foreground">Generating explanation…</p>
+          <div className="space-y-3">
+            <div>
+              <div className="h-3 w-16 bg-muted rounded animate-pulse mb-2" />
+              <div className="h-4 w-full bg-muted rounded animate-pulse mb-1" />
+              <div className="h-4 w-3/4 bg-muted rounded animate-pulse" />
+            </div>
+            <div>
+              <div className="h-3 w-20 bg-muted rounded animate-pulse mb-2" />
+              <div className="h-4 w-full bg-muted rounded animate-pulse mb-1" />
+              <div className="h-4 w-5/6 bg-muted rounded animate-pulse" />
+            </div>
+            <div>
+              <div className="h-3 w-24 bg-muted rounded animate-pulse mb-2" />
+              <div className="h-4 w-full bg-muted rounded animate-pulse" />
+            </div>
+          </div>
         )}
       </Section>
 
