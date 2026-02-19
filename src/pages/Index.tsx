@@ -163,14 +163,7 @@ export default function Index() {
           className="w-full h-11 text-[13px] font-medium transition-all duration-300 hover-scale animate-fade-in"
           style={{ animationDelay: "0.2s", animationFillMode: "both" }}
         >
-          {loading ? (
-            <>
-              <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-              Analyzing genetic variants…
-            </>
-          ) : (
-            "Analyze Drug Safety"
-          )}
+        {loading ? "Analyzing genetic variants…" : "Analyze Drug Safety"}
         </Button>
 
         {/* Results */}
