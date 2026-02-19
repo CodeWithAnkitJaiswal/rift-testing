@@ -5,7 +5,7 @@ import VcfUpload from "@/components/VcfUpload";
 import DrugSelector from "@/components/DrugSelector";
 import ResultsDisplay from "@/components/ResultsDisplay";
 import { Button } from "@/components/ui/button";
-import { parseVcf, extractGeneVariants } from "@/lib/vcf-parser.ts";
+import { parseVcf, extractGeneVariants } from "@/lib/vcf-parser";
 import { assessDrug } from "@/lib/pharmacogenomics";
 import type { DrugAssessmentResult } from "@/lib/types";
 import { supabase } from "@/integrations/supabase/client";
