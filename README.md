@@ -18,6 +18,11 @@ This project aims to reduce adverse drug reactions and improve patient safety th
 
 ---
 
+## LinkedIn video link
+
+🔗 https:yha/dal/do
+
+---
 ## Problem Statement
 
 Adverse drug reactions cause significant morbidity and mortality worldwide. Many of these reactions are preventable through pharmacogenomic testing.
@@ -165,3 +170,19 @@ App will run at:
 ```
 http://localhost:5173
 ```
+
+---
+
+## 👥 Team Information
+
+### 🛡 Team Name
+**Ragnarok Coders**
+
+### 👨‍💻 Team Members
+
+- **Ankit Jaiswal** – Team Leader  
+- **Anubhav Verma**  
+- **Akshay Kumar**  
+- **Shivani Singh**
+
+---
