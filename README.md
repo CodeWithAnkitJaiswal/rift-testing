@@ -63,6 +63,7 @@ A Vite + React + TypeScript project with TailwindCSS, Shadcn UI, and Supabase in
 
 ## 📂 Project Structure
 
+```
 root/
 │
 ├── public/
@@ -83,7 +84,7 @@ root/
 ├── tailwind.config.ts
 ├── vite.config.ts
 └── tsconfig.json
-
+```
 
 ---
 
