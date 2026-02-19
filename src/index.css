@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 214 15% 91%;
+    --foreground: 215 28% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+
+    --primary: 199 69% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 16% 93%;
+    --secondary-foreground: 215 28% 17%;
+
+    --muted: 210 14% 96%;
+    --muted-foreground: 215 13% 45%;
+
+    --accent: 199 30% 94%;
+    --accent-foreground: 215 28% 17%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 18% 89%;
+    --input: 214 18% 89%;
+    --ring: 199 69% 40%;
+
+    --radius: 0.5rem;
+
+    /* Risk: clinical — muted, not alarming */
+    --risk-safe: 152 44% 42%;
+    --risk-safe-bg: 152 30% 96%;
+    --risk-safe-foreground: 152 44% 20%;
+    --risk-safe-border: 152 30% 82%;
+
+    --risk-adjust: 38 70% 48%;
+    --risk-adjust-bg: 38 55% 96%;
+    --risk-adjust-foreground: 32 65% 22%;
+    --risk-adjust-border: 38 45% 82%;
+
+    --risk-danger: 0 50% 52%;
+    --risk-danger-bg: 0 40% 97%;
+    --risk-danger-foreground: 0 50% 28%;
+    --risk-danger-border: 0 35% 85%;
+
+    --risk-unknown: 215 10% 56%;
+    --risk-unknown-bg: 215 10% 96%;
+    --risk-unknown-foreground: 215 10% 32%;
+    --risk-unknown-border: 215 10% 86%;
+
+    --surface-elevated: 0 0% 100%;
+    --surface-sunken: 210 17% 96%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 215 28% 17%;
+    --sidebar-primary: 199 69% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 16% 93%;
+    --sidebar-accent-foreground: 215 28% 17%;
+    --sidebar-border: 214 18% 89%;
+    --sidebar-ring: 199 69% 40%;
+  }
+
+  .dark {
+    --background: 215 28% 7%;
+    --foreground: 210 17% 93%;
+
+    --card: 215 25% 10%;
+    --card-foreground: 210 17% 93%;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 210 17% 93%;
+
+    --primary: 199 60% 52%;
+    --primary-foreground: 215 28% 7%;
+
+    --secondary: 215 18% 16%;
+    --secondary-foreground: 210 17% 93%;
+
+    --muted: 215 18% 16%;
+    --muted-foreground: 215 10% 58%;
+
+    --accent: 215 18% 16%;
+    --accent-foreground: 210 17% 93%;
+
+    --destructive: 0 50% 35%;
+    --destructive-foreground: 210 17% 93%;
+
+    --border: 215 18% 18%;
+    --input: 215 18% 18%;
+    --ring: 199 60% 52%;
+
+    --risk-safe: 152 40% 48%;
+    --risk-safe-bg: 152 25% 12%;
+    --risk-safe-foreground: 152 35% 72%;
+    --risk-safe-border: 152 20% 22%;
+
+    --risk-adjust: 38 60% 50%;
+    --risk-adjust-bg: 38 30% 12%;
+    --risk-adjust-foreground: 38 50% 72%;
+    --risk-adjust-border: 38 25% 22%;
+
+    --risk-danger: 0 45% 52%;
+    --risk-danger-bg: 0 30% 12%;
+    --risk-danger-foreground: 0 40% 72%;
+    --risk-danger-border: 0 25% 22%;
+
+    --risk-unknown: 215 10% 52%;
+    --risk-unknown-bg: 215 8% 12%;
+    --risk-unknown-foreground: 215 8% 68%;
+    --risk-unknown-border: 215 8% 22%;
+
+    --surface-elevated: 215 25% 12%;
+    --surface-sunken: 215 28% 5%;
+
+    --sidebar-background: 215 28% 6%;
+    --sidebar-foreground: 210 17% 93%;
+    --sidebar-primary: 199 60% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 18% 16%;
+    --sidebar-accent-foreground: 210 17% 93%;
+    --sidebar-border: 215 18% 18%;
+    --sidebar-ring: 199 60% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .clinical-card {
+    @apply bg-card border border-border rounded-xl shadow-sm;
+  }
+
+  .risk-badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold tracking-wide;
+  }
+
+  .risk-badge-safe {
+    background-color: hsl(var(--risk-safe-bg));
+    color: hsl(var(--risk-safe-foreground));
+    border: 1px solid hsl(var(--risk-safe-border));
+  }
+
+  .risk-badge-adjust {
+    background-color: hsl(var(--risk-adjust-bg));
+    color: hsl(var(--risk-adjust-foreground));
+    border: 1px solid hsl(var(--risk-adjust-border));
+  }
+
+  .risk-badge-danger {
+    background-color: hsl(var(--risk-danger-bg));
+    color: hsl(var(--risk-danger-foreground));
+    border: 1px solid hsl(var(--risk-danger-border));
+  }
+
+  .risk-badge-unknown {
+    background-color: hsl(var(--risk-unknown-bg));
+    color: hsl(var(--risk-unknown-foreground));
+    border: 1px solid hsl(var(--risk-unknown-border));
+  }
+
+  /* Hover scale utility */
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  /* Clinical key-value row */
+  .kv-row {
+    @apply flex items-baseline justify-between py-2 border-b border-border/60 text-[13px];
+  }
+  .kv-row:last-child {
+    @apply border-b-0;
+  }
+  .kv-label {
+    @apply text-muted-foreground text-[11px] font-medium uppercase tracking-wider;
+  }
+  .kv-value {
+    @apply font-medium text-foreground text-right;
+  }
+}
