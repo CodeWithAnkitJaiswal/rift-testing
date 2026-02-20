@@ -22,7 +22,7 @@ This project aims to reduce adverse drug reactions and improve patient safety th
 
 Watch our live **PharmaGuard** demo on LinkedIn:
 
-[🔗 LinkedIn Video post URL](https://www.linkedin.com/posts/cwankitjaiswal7_rift2026-pharmaguard-pharmacogenomics-activity-7430435541814353920-pNG2)
+🔗 [LinkedIn Video post URL](https://www.linkedin.com/posts/cwankitjaiswal7_rift2026-pharmaguard-pharmacogenomics-activity-7430435541814353920-pNG2)
 
 ---
 ## Problem Statement
